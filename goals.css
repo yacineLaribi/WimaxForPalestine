@@ -1,0 +1,344 @@
+/*setting general rules*/
+:root{
+    --main-color: /*#3959FF*//* green*/ rgb(0,128,0);
+    --second-color:#141718;
+    --bg-color:#3959FF12;
+}
+/*the css of the first section*/
+.section1{
+    padding: 0 25%;
+    width: 100vw;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section1 h1{
+    color: var(--second-color);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 65.9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72.51px; /* 110.03% */
+    letter-spacing: -3.296px;
+}
+.section1 p{
+    color: rgba(20, 23, 24, 0.80);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 160% */
+}
+/*responsive of the section 1*/
+@media (max-width:768px){
+    .section1{
+        width: 100vw;
+        padding: 15px 20px;
+    }
+    .section1 h1{
+        font-size: 40px;
+    }
+}
+/*end of the responsive of the section1*/
+
+/*section 2 css*/
+.section2{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section2 .goals-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.section2 .goals-cards .goals-card{
+    display: flex;
+    width: 25%;
+    min-height: 350px;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding: 55px 0 0 35px;
+    gap: 19.19px;
+    border-radius: 13.92px;
+    background: rgba(57, 89, 255, 0.07);    
+}
+.section2 .goals-cards .goals-card .goal-icon{
+    width: 32px;
+    height: 32px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+}
+.section2 .goals-cards .goals-card h2{
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; /* 125% */
+    letter-spacing: -1.4px;
+}
+.section2 .goals-cards .goals-card p{
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.8px; /* 155% */
+}
+/*end of section 2 css*/
+/*responsive of the section 2*/
+@media (max-width:768px){
+    .section2{
+        width: 100vw;
+    }
+    .section2 .goals-cards{
+        padding: 15px;
+        flex-direction: column;
+    }
+    .section2 .goals-cards .goals-card{
+        width: 90%;
+        padding-top: 25px;
+    }
+}
+/*end of the responsive of the section 2*/
+
+/*section 3 and section4 css*/
+.section3,.section4{
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.left{
+    border: 1px solid;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.topology1{
+    height: 350px;
+}
+.topology2{
+    height: 450px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 4rem;
+}
+.right h1{
+    color: var(--second-color);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 65.9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72.51px; /* 110.03% */
+    letter-spacing: -3.296px;
+}
+.text-field p{
+    color: rgba(20, 23, 24, 0.80);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 160% */
+}
+.right .stat-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.right .stat-cards .stat-card{
+    width: 180px;
+    height: 150px;
+    display: flex;
+    padding: 25px 22.39px 47.35px 22.39px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: #00872612;
+    position: relative;
+}
+.stat-card .icons{
+    position: absolute;
+    top: -15px;
+}
+.right .stat-cards .stat-card h2{
+    font-size: 18px;
+}
+.right .stat-cards .stat-card p{
+    font-size: 13px;
+}
+/*end of section 3 and section 4 css*/
+/*responsive of the section 3 and section 4*/
+@media (max-width:768px){
+    .section3{
+        flex-direction: column-reverse;
+        width: 100vw;
+        padding: 15px 20px;
+    }
+    .section4{
+        flex-direction: column;
+    }
+    .left{
+        width: 90vw;
+        height: auto;
+        padding: 0;
+        object-fit: cover;
+    }
+    .topology1{
+        height: auto;
+        width: 103%;
+        object-fit: contain;
+    }
+    .right{
+        width: 100vw;
+        padding: 15px 20px;
+    }
+    .right h1{
+        font-size: 50px;
+    }
+    .right .stat-cards{
+        flex-direction: column;
+        gap: 2rem;
+        width: 100vw;
+    }
+    .right .stat-cards .stat-card{
+        width: 90%;
+    }
+    .topology2{
+        height: auto;
+        width: 90vw;
+        object-fit: cover;
+    }
+}
+/*end of the responsive part 3 and 4*/
+.section5{
+    padding: 50px 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    gap: 2rem;
+}
+.section5 h1{
+    color: var(--second-color);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 65.9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72.51px; /* 110.03% */
+    letter-spacing: -3.296px;
+}
+.section5 p{
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px; /* 160% */
+}
+.section5 .advantage-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.section5 .advantage-cards .advantage-card{
+    width: 400px;
+    min-height: 300px;
+    background-color: #00872612;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    padding: 49.59px 12.6px 49.51px 49.59px;
+    border-radius: 15px;
+}
+.section5 .advantage-cards .advantage-card .icon{
+    width: 32px;
+    height: 32px;
+    padding: 20px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section5 .advantage-cards .advantage-card h2{
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; /* 125% */
+    letter-spacing: -1.4px;
+}
+.section5 .advantage-cards .advantage-card p{
+    font-family: Space Grotesk;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.8px; /* 155% */
+}
+.section5 .advantage-cards .advantage-card ul{
+    list-style:circle;
+}
+.section5 .advantage-cards .advantage-card ul li{
+    font-family: Space Grotesk;
+    font-size: 15.875px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.4px; /* 141.102% */
+    letter-spacing: -0.32px;
+}
+/*responsive of the section 5 */
+@media (max-width:768px){
+    .section5{
+        width: 100vw;
+        padding: 15px 20px;
+    }
+    .section5 h1{
+        font-size: 40px;
+    }
+    .section5 p{
+        padding: 0 10px;
+    }
+    .section5 .advantage-cards{
+        flex-direction: column;
+        width: 100vw;
+        padding: 0 15px;
+    }
+    .section5 .advantage-cards .advantage-card{
+        width: 90%;
+    }
+    .section5 .advantage-cards .advantage-card p{
+        text-align: start;
+    }
+
+
+
+}
+/*end of the responsive of section 5 */
+
+footer .left{
+    border: none;
+}
